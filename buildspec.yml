@@ -9,7 +9,7 @@ build:
     commands:
       - echo "Ejecutando análisis de seguridad con Checkmarx..."
       - ./cx scan create --project-name "$CX_PROJECT_NAME" \
-        --repo "$GITHUB_REPO" --branch "$BRANCH" \
+        --repo "https://github.com/joseca593/exp-pnbxi-app202-user-data-channel-ms" --branch "main" \
         --client-id "$CX_CLIENT_ID" --client-secret "$CX_CLIENT_SECRET" \
         --tenant "$CX_TENANT" --base-uri "$CX_BASE_URI" \
         --report-format 'summaryHTML' --agent 'CodeBuild'
