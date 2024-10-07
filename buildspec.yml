@@ -7,4 +7,4 @@ phases:
       - tar xzvf ./cxcli.tar.gz
   build:
     commands:
-      - ./cx scan create --project-name "exp-pnbxi-app202-user-data-channel-ms" --file-source "." --branch "main" --report-format 'summaryHTML' --agent 'CodeCommit' --base-uri "$CX_BASE_URI" --tenant "$CX_TENANT" --client-id "$CX_CLIENT_ID" --client-secret "$CX_CLIENT_SECRET"
+      - ./cx scan create --project-name "exp-pnbxi-app202-user-data-channel-ms" --file-source "https://github.com/joseca593/exp-pnbxi-app202-user-data-channel-ms" --branch "main" --report-format 'summaryHTML' --agent 'CodeCommit' --base-uri "$CX_BASE_URI" --tenant "$CX_TENANT" --client-id "$CX_CLIENT_ID" --client-secret "$CX_CLIENT_SECRET"
