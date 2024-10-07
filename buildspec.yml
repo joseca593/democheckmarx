@@ -9,4 +9,3 @@ phases:
     commands:
       - echo "Iniciando el análisis con Checkmarx..."
       - ./cx scan --project-name "MiProyecto" --repo "https://github.com/joseca593/exp-pnbxi-app202-user-data-channel-ms" --branch "main"	  
-	  
