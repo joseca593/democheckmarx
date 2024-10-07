@@ -7,4 +7,6 @@ phases:
       - tar xzvf ./cxcli.tar.gz
   build:
     commands:
-      - ./cx scan create --project-name "$CX_PROJECT_NAME" --file-source "." --branch "main" --report-format 'summaryHTML' --agent 'CodeCommit' --base-uri "$CX_BASE_URI" --tenant "$CX_TENANT" --client-id "$CX_CLIENT_ID" --client-secret "$CX_CLIENT_SECRET"
+      - echo "Iniciando el análisis con Checkmarx..."
+      - ./cx scan --project-name "MiProyecto" --repo "https://github.com/joseca593/exp-pnbxi-app202-user-data-channel-ms" --branch "main"	  
+	  
