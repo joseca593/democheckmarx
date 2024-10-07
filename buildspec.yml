@@ -1,0 +1,14 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo "Instalando dependencias..."
+      - pip install --upgrade awscli
+  pre_build:
+    commands:
+      - echo "Descargando el código fuente..."
+  build:
+    commands:
+      - echo "Iniciando el análisis con Checkmarx..."
+      - ./cx scan --project-name "MiProyecto" --repo "https://github.com/mi-repo" --branch "main"
